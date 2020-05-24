@@ -1,0 +1,12 @@
+{
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "\"Личный проект Cat Energy от HTML Academy\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
