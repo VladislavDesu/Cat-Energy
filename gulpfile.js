@@ -5,7 +5,7 @@ var rename = require("gulp-rename");
 var clean = require("gulp-clean");
 
 gulp.task("style", function() {
-    return gulp.src("app/scss/**/*.scss")
+    return gulp.src("app/scss/style.scss")
     .pipe(sass())
     .pipe(gulp.dest("build/css"));
 });
@@ -18,7 +18,7 @@ gulp.task("minify", function() {
 });
 
 gulp.task("watch-css", function() {
-    return gulp.watch(["app/scss/style.scss", "app/*.html"], gulp.series("build"));
+    return gulp.watch(["app/scss/**/*.scss", "app/*.html"], gulp.series("build"));
 });
 
 gulp.task("copy", function() {
