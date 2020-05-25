@@ -18,7 +18,7 @@ gulp.task("minify", function() {
 });
 
 gulp.task("watch-css", function() {
-    return gulp.watch("app/scss/style.scss", gulp.series("build"));
+    return gulp.watch(["app/scss/style.scss", "app/*.html"], gulp.series("build"));
 });
 
 gulp.task("copy", function() {
