@@ -16,7 +16,7 @@ gulp.task("style", function() {
 });
 
 gulp.task("watch-css", function() {
-    return gulp.watch(["app/scss/**/*.scss", "app/*.html"], gulp.series("build"));
+    return gulp.watch(["app/scss/**/*.scss", "app/*.html"], gulp.series("style"));
 });
 
 gulp.task("clean", function() {
@@ -27,6 +27,8 @@ gulp.task("clean", function() {
 gulp.task("copy", function() {
     return gulp.src([
         "app/fonts/**/*.{woff,woff2}",
+        "app/img/**/*.{png,jpeg,svg,webp}",
+        "app/js/**/*.js",
         "app/*.html"
     ], {
             base: "app"
