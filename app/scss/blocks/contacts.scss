@@ -1,0 +1,28 @@
+.contacts__wrapper {
+    display: flex;
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+}
+
+.contacts__invite {
+    width: 140px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+.contacts__address {
+    width: 140px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contacts__map-img {
+    display: block;
+}
