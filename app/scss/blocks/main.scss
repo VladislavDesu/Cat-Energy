@@ -1,0 +1,63 @@
+.main__header {
+    position: relative;
+    margin-bottom: 22px;
+    font-family: "Oswald", "Arial", sans-serif;
+}
+
+.main__bg {
+    padding-top: 27px;
+    height: 278px;
+    background-color: #68b738;
+    background-image: url("../img/index-background-mobile@1x.webp");
+    background-repeat: no-repeat;
+}
+
+.main__title {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.main__slogan {
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main__product {
+    position: absolute;
+    bottom: 62px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.main__btn {
+    width: 280px;
+    margin-top: 135px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 11px;
+    padding-right: 70px;
+    padding-bottom: 11px;
+    padding-left: 70px;
+}
+
+.main__catigories {
+    margin-bottom: 17px;
+}
+
+.main__how-it-work {
+    margin-bottom: 42px;
+}
+
+.main__examples {
+    padding-top: 17px;
+    padding-bottom: 36px;
+    background-color: #f2f2f2;
+}
