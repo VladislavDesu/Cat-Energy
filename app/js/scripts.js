@@ -1,14 +1,12 @@
-var header = document.querySelector(".header");
-var toggle = header.querySelector(".header__toggle");
-var navigation = header.querySelector(".main-nav");
+var nav = document.querySelector(".main-nav");
+var toggle = nav.querySelector(".main-nav__toggle");
 var slider = document.querySelector(".expamples__slider");
 var imgSlider = slider.querySelectorAll(".examples__img");
 var sliderChecked = slider.querySelector(".examples__slide-checkbox");
 
 toggle.addEventListener("click", function(event) {
     event.preventDefault();
-    navigation.classList.toggle("main-nav--closed");
-    toggle.classList.toggle("header__toggle--closed");
+    nav.classList.toggle("main-nav--closed");
 });
 
 sliderChecked.addEventListener("click", function(event) {
