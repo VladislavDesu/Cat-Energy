@@ -1,51 +1,18 @@
 .header__logo {
     display: block;
-    height: 65px;
+    padding-top: 11px;
     padding-right: 20px;
+    padding-bottom: 12px;
     padding-left: 20px;
     border-bottom: 1px solid #e6e6e6;
 }
 
 .header__img {
-    margin-top: 11px;
+    width:191px;
+    height: 38px;
 }
 
-.header__toggle {
-    @include no-style-btn();
-    position: absolute;
-    top: 21px;
-    right: 18px;
-    width: 28px;
-    height: 22px;
-    font-size: 0;
-
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 24px;
-        height: 2px;
-        background-color: #222222;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    &::before {
-        transform: translate(-50%, -50%) rotate(-45deg);
-    }
-}
-
-.header__toggle--closed {
-    &::after,
-    &::before {
-        top: 2px;
-        left: 2px;
-        transform: rotate(0);
-    }
-
-    &::after {
-        top: 10px;
-        box-shadow: 0 8px 0 0 #222222;
-    }
+.header__main-nav {
+    position: relative;
+    font-family: $oswald;
 }
