@@ -2,18 +2,22 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.min.css">
         <title>Cat Energy</title>
     </head>
 
     <body class="page">
         <header class="header page__header">
-            <a class="header__logo" href="#">
-                <img class="header__img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип нашего сайта «Cat Energy»">
+            <a class="header__logo">
+                <picture>
+                    <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип нашего сайта «Cat Energy»">
+                </picture>
             </a>
-            <button class="header__toggle" type="button">Закрыть</button>
-            <nav class="main-nav">
+
+            <nav class="main-nav header__main-nav">
+                <button class="main-nav__toggle" type="button">Закрыть</button>
+
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
 
@@ -29,10 +33,12 @@
                 <div class="main__bg">
                     <h1 class="title main__title">Функциональное<br> питание для котов</h1>
                     <p class="main__slogan">Занялся собой? Займись котом!</p>
-                    <p class="main__product">
-                        <img class="main__product-img" src="img/index-can-mobile@1x.webp" width="280" height="271" alt="Изображение нашего товара Cat Energy Pro, со вкусом курицы 500 грамм">
-                    </p>
                 </div>
+                <p class="main__product">
+                    <picture>
+                        <img class="main__product-img" src="img/index-can-mobile@1x.webp" alt="Изображение нашего товара Cat Energy Pro, со вкусом курицы 500 грамм">
+                    </picture>
+                </p>
                 <a class="btn main__btn" href="form.html">Подобрать программу</a>
             </div>
 
@@ -68,13 +74,13 @@
                     <h2 class="title how-it-work__title">Как это работает</h2>
 
                     <ul class="how-it-work__list">
-                        <li class="how-it-work__item how-it-work__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
+                        <li class="how-it-work__item how-it-work__item--leaf"><span class="how-it-work__one">1</span>Функциональное питание содержит только полезные питательные вещества.</li>
 
-                        <li class="how-it-work__item how-it-work__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+                        <li class="how-it-work__item how-it-work__item--powder"><span class="how-it-work__two">2</span>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
 
-                        <li class="how-it-work__item how-it-work__item--dining">Замените один-два приема обычной еды на наше функциональное питание.</li>
+                        <li class="how-it-work__item how-it-work__item--dining"><span class="how-it-work__three">3</span>Замените один-два приема обычной еды на наше функциональное питание.</li>
 
-                        <li class="how-it-work__item how-it-work__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+                        <li class="how-it-work__item how-it-work__item--clock"><span class="how-it-work__four">4</span>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
                     </ul>
                 </div>
             </section>
@@ -90,29 +96,29 @@
                     </p>
 
                     <table class="examples__table">
-                        <tr class="examples__row">
+                        <tr>
                             <td class="examples__info">Снижение веса</td>
                             <td class="examples__weight">5 кг</td>
                         </tr>
 
-                        <tr class="examples__row">
+                        <tr>
                             <td class="examples__info">Затрачено времени</td>
                             <td class="examples__day">60 дней</td>
                         </tr>
 
-                        <tr class="examples__row examples__row--big-width">
+                        <tr>
                             <td>Затраты на питание:</td>
                             <td class="examples__money">15 000 руб.</td>
                         </tr>
                     </table>
                 </div>
 
-                <div class="expamples__slider">
-                    <img class="examples__img examples__img--show" src="img/before-mobile@1x.webp" width="320" height="240" alt="Изображение Бориса до нашей программы">
-                    <img class="examples__img" src="img/after-mobile@1x.webp" width="320" height="240" alt="Изображение Бориса после нашей программы">
-                    <p class="examples__slide">
+                <div class="expamples__slide">
+                    <img class="examples__slide-img examples__slide-img--show" src="img/before-mobile@1x.webp" alt="Изображение Бориса до нашей программы">
+                    <img class="examples__slide-img" src="img/after-mobile@1x.webp" alt="Изображение Бориса после нашей программы">
+                    <p class="examples__slider">
                         Было
-                        <span class="examples__slide-checkbox"></span>
+                        <span class="examples__slider-checkbox"></span>
                         Стало
                     </p>
                 </div>
@@ -125,7 +131,7 @@
                     <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </div>
                 <div class="contacts__map">
-                    <img class="contacts__map-img" src="img/bg-map-mobile@1x.webp" width="320" height="400" alt="Изображение карты с нашим рассположением по улице Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+                    <img class="contacts__map-img" src="img/bg-map-mobile@1x.webp" alt="Изображение карты с нашим рассположением по улице Большая Конюшенная, дом 19/8, город Санкт-Петербург">
                 </div>
             </section>
         </main>
@@ -133,7 +139,7 @@
         <footer class="footer page__footer">
             <div class="footer__wrapper">
                 <p class="footer__logo">
-                    <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип названия нашего сайта «Cat Energy»">
+                    <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип названия нашего сайта «Cat Energy»">
                 </p>
 
                 <ul class="social footer__social-list">
