@@ -9,14 +9,14 @@ gulp.task("style", function() {
     .pipe(sass({
             outputStyle: "expanded"
         }).on("error", sass.logError))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("app/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("app/css"));
 });
 
-gulp.task("watch-css", function() {
-    return gulp.watch(["app/scss/**/*.scss", "app/*.html"], gulp.series("style"));
+gulp.task("watch-all", function() {
+    return gulp.watch(["app/scss/**/*.scss", "app/*.html"], gulp.series("build"));
 });
 
 gulp.task("clean", function() {
@@ -27,7 +27,7 @@ gulp.task("clean", function() {
 gulp.task("copy", function() {
     return gulp.src([
         "app/fonts/**/*.{woff,woff2}",
-        "app/img/**/*.{png,jpeg,svg,webp}",
+        "app/img/**/*.{png,jpg,svg,webp}",
         "app/js/**/*.js",
         "app/*.html"
     ], {
@@ -37,7 +37,5 @@ gulp.task("copy", function() {
 });
 
 gulp.task("build", gulp.series(
-    "clean",
-    "copy",
     "style"
 ));
