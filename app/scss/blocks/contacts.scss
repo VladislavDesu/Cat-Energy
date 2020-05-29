@@ -1,5 +1,6 @@
 .contacts__wrapper {
     display: flex;
+    justify-content: center;
     padding-top: 28px;
     padding-right: 20px;
     padding-bottom: 26px;
@@ -11,7 +12,7 @@
     margin: 0;
     font-size: 16px;
     line-height: 20px;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $oswald;
     color: #111111;
     text-transform: uppercase;
 }
@@ -23,6 +24,23 @@
     line-height: 20px;
 }
 
+.contacts__map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 170px;
+        width: 124px;
+        height: 106px;
+        background-image: url("../img/map-pin.webp");
+    }
+}
+
 .contacts__map-img {
-    display: block;
+    width: 320px;
+    height: 400px;
 }

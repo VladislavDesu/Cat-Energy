@@ -15,9 +15,10 @@
 
 .how-it-work__item {
     position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
     margin-bottom: 20px;
-    padding-top: 2px;
-    padding-bottom: 4px;
     padding-left: 80px;
 
     &::before {
@@ -27,7 +28,7 @@
         left: 0;
         width: 60px;
         height: 60px;
-        background-color: #68b738;
+        background-color: $green-color;
     }
 
     &::after {
@@ -67,4 +68,11 @@
     &::after {
         background-image: url("../img/advantage-clock@1x.png");
     }
+}
+
+.how-it-work__one,
+.how-it-work__two,
+.how-it-work__three,
+.how-it-work__four {
+    display: none;
 }
