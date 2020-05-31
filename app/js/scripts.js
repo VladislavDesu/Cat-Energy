@@ -1,6 +1,6 @@
 var nav = document.querySelector(".main-nav");
 var toggle = nav.querySelector(".main-nav__toggle");
-var slide = document.querySelector(".expamples__slide");
+var slide = document.querySelector(".examples__slide");
 var slideImg = slide.querySelectorAll(".examples__slide-img");
 var sliderCheckbox = slide.querySelector(".examples__slider-checkbox");
 
