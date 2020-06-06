@@ -107,3 +107,119 @@
         border-left-color: #3e4242;
     }
 }
+
+@media #{$tablet-width} {
+    .catigories__wrapper {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .catigories__item {
+        margin-bottom: 30px;
+        padding-top: 72px;
+        padding-right: 316px;
+        padding-bottom: 42px;
+        padding-left: 52px;
+    }
+
+    .catigories__title {
+        margin-bottom: 20px;
+        padding: 0;
+        font-size: 36px;
+
+        &::before {
+            top: 20px;
+            right: -255px;
+            left: auto;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .catigories__title--slim {
+        &::after {
+            top: 8px;
+            right: -224px;
+            left: auto;
+            width: 140px;
+            height: 194px;
+        }
+    }
+
+    .catigories__title--pro {
+        &::after {
+            top: 63px;
+            right: -288px;
+            left: auto;
+            width: 268px;
+            height: 112px;
+        }
+    }
+
+    .catigories__desc {
+        margin-bottom: 39px;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .catigories__link {
+        width: 135px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media #{$desktop-width} {
+    .catigories__wrapper {
+        padding-right: 110px;
+        padding-left: 110px;
+    }
+
+    .catigories__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catigories__item {
+        box-sizing: border-box;
+        width: 570px;
+        margin-bottom: 0;
+        padding-top: 70px;
+        padding-right: 55px;
+        padding-bottom: 43px;
+    }
+
+    .catigories__title {
+        margin-bottom: 70px;
+        padding-left: 161px;
+
+        &::before {
+            top: -24px;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .catigories__desc {
+        margin-bottom: 14px;
+    }
+    
+    .catigories__title--slim {
+        &::after {
+            top: -30px;
+            left: 14px;
+            width: 70px;
+            height: 97px;
+        }
+    }
+
+    .catigories__title--pro {
+        &::after {
+            top: -2px;
+            left: -18px;
+            width: 134px;
+            height: 56px;
+        }
+    }
+}

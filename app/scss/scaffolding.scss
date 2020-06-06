@@ -3,6 +3,7 @@
     src:
         url("../fonts/oswaldregular.woff2") format("woff2"),
         url("../fonts/oswaldregular.woff") format("woff");
+    font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
@@ -12,6 +13,7 @@
     src:
         url("../fonts/oswaldmedium.woff2") format("woff2"),
         url("../fonts/oswaldmedium.woff") format("woff");
+    font-display: swap;
     font-weight: 500;
     font-style: normal;
 }
@@ -56,4 +58,20 @@ img {
     text-decoration: none;
     text-align: center;
     box-sizing: border-box;
+}
+/*!!!!!ЭТО НЕ ТОЧНО ПОТОМ ПРОВЕРИТЬ!!!!!*/
+@media #{$tablet-width} {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .title {
+        color: #111111;
+    }
+
+    .btn {
+        font-size: 20px;
+        line-height: 20px;
+    }
 }

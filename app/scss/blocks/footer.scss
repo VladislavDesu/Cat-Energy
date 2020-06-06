@@ -14,15 +14,15 @@
 }
 
 .footer__logo-img {
-     width: 128px;
-     height: 24px;
+    width: 128px;
+    height: 24px;
 }
 
 .footer__social-list {
+    @include no-style-list();
     display: flex;
     justify-content: space-between;
     width: 125px;
-    @include no-style-list();
     margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 21px;
@@ -43,4 +43,21 @@
     line-height: 1.3;
     color: #444444;
     text-decoration: none;
+}
+
+@media #{$tablet-width} {
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .footer__logo {
+        border-bottom: none;
+    }
+
+    .footer__copyright {
+        border-top: none;
+    }
 }

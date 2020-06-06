@@ -79,7 +79,8 @@ gulp.task("html", function() {
         .pipe(posthtml([
             include()
         ]))
-        .pipe(gulp.dest("build"));
+        .pipe(gulp.dest("build"))
+        .pipe(server.stream());
 });
 
 gulp.task("serve", function() {

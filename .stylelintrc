@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": [4, {"ignore": ["inside-parens"]}],
+    "number-leading-zero": null,
+    "property-no-unknown": [ true, {
+      "ignoreProperties": [
+        "composes"
+      ]
+    }],
+    "unit-whitelist": ["%", "em", "rem", "s", "ms", "deg", "px"]
+  }
+}

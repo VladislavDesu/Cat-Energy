@@ -3,29 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+        <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
         <link rel="stylesheet" href="css/style.min.css">
         <title>Cat Energy</title>
     </head>
 
     <body class="page">
         <header class="header page__header">
-            <a class="header__logo">
-                <picture>
-                    <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип нашего сайта «Cat Energy»">
-                </picture>
-            </a>
+            <div class="header__wrapper">
+                <a class="header__logo">
+                    <picture>
+                        <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+                        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+                        <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип нашего сайта «Cat Energy»">
+                    </picture>
+                </a>
 
-            <nav class="main-nav header__main-nav">
-                <button class="main-nav__toggle" type="button">Закрыть</button>
+                <nav class="main-nav header__main-nav">
+                    <button class="main-nav__toggle" type="button">Закрыть</button>
 
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
 
-                    <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
 
-                    <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
-                </ul>
-            </nav>
+                        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main class="main page__main">
@@ -36,7 +42,9 @@
                 </div>
                 <p class="main__product">
                     <picture>
-                        <img class="main__product-img" src="img/index-can-mobile@1x.webp" alt="Изображение нашего товара Cat Energy Pro, со вкусом курицы 500 грамм">
+                        <source srcset="img/index-can-desktop@1x.webp" media="(min-width: 1440px)">
+                        <source srcset="img/index-can-tablet@1x.webp" media="(min-width: 768px)">
+                        <img class="main__product-img" src="img/index-can-mobile@1x.webp" width="280" height="271" alt="Изображение нашего товара Cat Energy Pro, со вкусом курицы 500 грамм">
                     </picture>
                 </p>
                 <a class="btn main__btn" href="form.html">Подобрать программу</a>
@@ -86,41 +94,53 @@
             </section>
 
             <section class="examples main__examples">
-                <div class="examples__wrapper">
-                    <h2 class="title examples__title">Живой пример</h2>
+                <h2 class="title examples__title">Живой пример</h2>
 
-                    <p class="examples__desc">
-                        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-                        Отличный результат без изнуряющих тренировок!
-                        При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-                    </p>
+                <div class="example__inner">
+                    <div class="examples__wrapper">
 
-                    <table class="examples__table">
-                        <tr>
-                            <td class="examples__info">Снижение веса</td>
-                            <td class="examples__weight">5 кг</td>
-                        </tr>
-
-                        <tr>
-                            <td class="examples__info">Затрачено времени</td>
-                            <td class="examples__day">60 дней</td>
-                        </tr>
-
-                        <tr>
-                            <td>Затраты на питание:</td>
-                            <td class="examples__money">15 000 руб.</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="expamples__slide">
-                    <img class="examples__slide-img examples__slide-img--show" src="img/before-mobile@1x.webp" alt="Изображение Бориса до нашей программы">
-                    <img class="examples__slide-img" src="img/after-mobile@1x.webp" alt="Изображение Бориса после нашей программы">
-                    <p class="examples__slider">
-                        Было
-                        <span class="examples__slider-checkbox"></span>
-                        Стало
-                    </p>
+                        <p class="examples__desc">
+                            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                            Отличный результат без изнуряющих тренировок!
+                            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+                        </p>
+    
+                        <table class="examples__table">
+                            <tr>
+                                <td class="examples__info">Снижение веса</td>
+                                <td class="examples__weight">5 кг</td>
+                            </tr>
+    
+                            <tr>
+                                <td class="examples__info">Затрачено времени</td>
+                                <td class="examples__day">60 дней</td>
+                            </tr>
+    
+                            <tr>
+                                <td>Затраты на питание:</td>
+                                <td class="examples__money">15 000 руб.</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div class="examples__slide">
+                        <picture>
+                            <source srcset="img/before-tablet@1x.webp" media="(min-width: 768px)">
+                            <img class="examples__slide-img examples__slide-img--show" src="img/before-mobile@1x.webp" width="320" height="240" alt="Изображение Бориса до нашей программы">
+                        </picture>
+                        <picture>
+                            <source srcset="img/after-tablet@1x.webp" media="(min-width: 768px)">
+                        <img class="examples__slide-img" src="img/after-mobile@1x.webp" width="320" height="240" alt="Изображение Бориса после нашей программы">
+                        </picture>
+    
+                        <p class="examples__slider">
+                            Было
+                            <span class="examples__slider-checkbox">
+                                <span class="examples__slider-toggle"></span>
+                            </span>
+                            Стало
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -131,7 +151,10 @@
                     <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </div>
                 <div class="contacts__map">
-                    <img class="contacts__map-img" src="img/bg-map-mobile@1x.webp" alt="Изображение карты с нашим рассположением по улице Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+                    <picture>
+                        <source srcset="img/bg-map-tablet@1x.webp" media="(min-width: 768px)">
+                        <img class="contacts__map-img" src="img/bg-map-mobile@1x.webp" width="320" height="400" alt="Изображение карты с нашим рассположением по улице Большая Конюшенная, дом 19/8, город Санкт-Петербург">
+                    </picture>
                 </div>
             </section>
         </main>

@@ -66,3 +66,39 @@
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 }
+
+@media #{&$tablet-width} {
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__list {
+        display: flex;
+    }
+
+    .main-nav__item {
+        margin-left: 36px;
+        border-bottom: none;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+
+    .main-nav__link {
+        padding: 0;
+        padding-top: 19px;
+        padding-bottom: 23px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #222222;
+    }
+}
+
+@media #{$tablet-width} {
+    .main-nav__link {
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+}
