@@ -4,7 +4,7 @@
   "description": "\"Личный проект Cat Energy от HTML Academy\"",
   "devDependencies": {
     "autoprefixer": "^9.8.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.13",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
