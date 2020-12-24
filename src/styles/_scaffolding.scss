@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.title {
+    margin: 0;
+    font-weight: normal;
+    font-family: $oswald;
+    color: #000000;
+}
+
+.btn {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $green-color;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}

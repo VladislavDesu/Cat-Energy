@@ -1,0 +1,151 @@
+.how-it-work__wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.how-it-work__title {
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 60px;
+}
+
+.how-it-work__list {
+    @include no-style-list();
+}
+
+.how-it-work__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background-color: $green-color;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-50%);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.how-it-work__item--leaf {
+    &::after {
+        background-image: url("../images/advantage-leaf@1x.png");
+    }
+}
+
+.how-it-work__item--powder {
+    &::after {
+        background-image: url("../images/advantage-powder@1x.png");
+    }
+}
+
+.how-it-work__item--dining {
+    &::after {
+        background-image: url("../images/advantage-dining@1x.png");
+    }
+}
+
+.how-it-work__item--clock {
+    &::after {
+        background-image: url("../images/advantage-clock@1x.png");
+    }
+}
+
+.how-it-work__one,
+.how-it-work__two,
+.how-it-work__three,
+.how-it-work__four {
+    display: none;
+}
+
+@media #{$tablet-width} {
+    .how-it-work__wrapper {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .how-it-work__title {
+        margin-bottom: 72px;
+        font-size: 60px;
+    }
+
+    .how-it-work__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -138px;
+    }
+
+    .how-it-work__item {
+        display: block;
+        width: 245px;
+        height: auto;
+        margin-left: 138px;
+        margin-bottom: 133px;
+        padding-top: 112px;
+        padding-left: 0;
+
+        &::before {
+            width: 80px;
+            height: 80px;
+        }
+
+        &::after {
+            top: 40px;
+            left: 15px;
+        }
+
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    .how-it-work__one,
+    .how-it-work__two,
+    .how-it-work__three,
+    .how-it-work__four {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        z-index: -1;
+        display: block;
+        font-size: 281px;
+        line-height: 281px;
+        font-family: $oswald;
+        color: #f2f2f2;
+    }
+}
+
+@media #{$desktop-width} {
+    .how-it-work__wrapper {
+        padding-right: 110px;
+        padding-left: 110px;
+    }
+
+    .how-it-work__list {
+        margin-left: -80px;
+    }
+
+    .how-it-work__item {
+        margin-left: 80px;
+        margin-bottom: 0;
+    }
+}
